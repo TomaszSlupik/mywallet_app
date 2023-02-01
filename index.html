@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Wallet_app</title>
+    <script src="https://kit.fontawesome.com/74041d88a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+<!-- Nowa transakcja -->
+            <div class="newtransaction">
+                <div class="addnewtransaction">
+                    <div class="headeraddnew">Add new transaction</div>
+                    <div class="transationlist">Name</div>
+                    <div class="givename">Give name transaction</div>
+                    <input value="" id="name" type="text"/>
+
+                    <div class="transationlist">Price</div>
+                    <div class="givename">Give price...</div>
+                    <input class="expenseInput" value="" id="price" type="number"/>
+
+                    <div class="transationlist">Choice your category</div>
+                    <select class="expenseOption" id="category">
+                        <option  class="valueNothing" value="0"></option>
+                        <option value="1">Profit</option>
+                        <option value="2">Expense</option>
+                      </select> 
+
+                    <div class="circlebox">
+                        <div class="addboxdelete addnew">
+                            <div class="textaddboxdelete"> 
+                                Add
+                            </div>
+                        </div>
+                        <div class="addboxdelete cancelnew">
+                            <div class="textaddboxdelete">
+                               Cancel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="givename error"></div>
+                </div>
+            </div>
+            
+           
+
+            <div class="deletebox">
+                <div class="deletewrapperbox">
+                    <div class="headeraddnewdelete">Are you delete all transactions? </div>
+                    <div class="deletewrapperboxtask">
+
+                    </div>
+                    <div class="buttonbox">
+                        <button class="btnone">Yes</button>
+                        <button class="btntwo">No</button>
+                    </div>
+                    
+                </div>
+            </div>
+        
+
+
+    <header>
+        <div class="headerwrapper">
+            <div class="imgheader">
+                <div class="shadow"></div>
+            </div>
+            <div class="headerbox">
+                <div class="boxerheader">
+                    <div class="firstheader">
+                        <h1>My wallet</h1>
+                        <div class="walleticon"><i class="fa-solid fa-wallet"></i></div>
+                    </div>
+                    <div class="secondheader">
+                        <h2>My own wallet finance</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <!-- Layout -->
+            <div class="listtransactions">
+                <div class="transationlist">Transaction list</div>
+                <div class="twoboxlisttransactions">
+                    <div class="firstboxlisttransactions">
+                        <div class="headerlisttrans income">Profit:</div>
+                        <div class="profitbox">
+                            <div class="profit"><span class="profitprice"></span></div>
+                        </div>
+                    </div>
+                    <div class="secondboxlisttransactions">
+                        <div class="headerlisttrans expenses">Expense:</div>
+                        <div class="expensebox">
+                            <div class="expense"><span class="expenseprice"></span></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="yourfinance">
+                <div class="boxsaving">
+                    <div class="transationlist">Your finance:</div>
+                    <p class="available transationlist"></p>
+                    <div class="circlebox">
+                        <div class="addboxdelete addone">
+                            <div class="textaddboxdelete">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                Add Transaction
+                            </div>
+                        </div>
+                        <div class="addboxdelete deletealltransaction">
+                            <div class="textaddboxdelete">
+                                <i class="fa-solid fa-trash-can"></i>
+                                Delete Transaction
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transationlist">Choice style:</div>
+                    <div class="circlebox">
+                        <div class="circle"></div>
+                        <div class="circle circletwo"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
